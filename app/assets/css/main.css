@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "@nuxt/ui-pro";
+
+@source "../../../content/**/*";
+
+@theme {
+  --font-sans: 'Public Sans', sans-serif;
+}
+
+@theme {
+  --color-background: #F3F0E8;
+}
+
+/* assets/css/fonts.css */
+.font-robotoslab {
+  font-family: 'Roboto Slab', serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,156 @@
+seo:
+  title: Dreams2Code - Webdesign & Entwicklung aus Unterfranken
+  description: Dreams2Code ist eine Webdesign- und Entwicklungsagentur aus Unterfranken, die sich auf die Erstellung von modernen, benutzerfreundlichen Websites spezialisiert hat.
+  keywords: Webdesign, Entwicklung, Unterfranken, moderne Websites, benutzerfreundliche Websites
+title: '[Websiten]{.text-primary} technisch stark, optisch überzeugend.'
+description: Individuelle Internetpräsenz für Selbstständige & Unternehmen – modern, responsiv & suchmaschinenoptimiert.
+image:
+  src: '/images/hero_dreams2code.webp'
+  alt: 'Webdesign & Entwicklung aus Unterfranken'
+hero:
+  links:
+    - label: Projekt anfragen
+      icon: i-lucide-message-square-plus
+      trailing: true
+      variant: solid
+      to: '#'
+      target: _blank
+      size: xl
+section:
+  title: 'Was ist Ihre [Website]{.text-primary} wert, wenn sie niemand findet?'
+  description: Viele Websites sehen hübsch aus, aber sind zu langsam, nicht mobilfähig oder bei Google unsichtbar.
+  images:
+    mobile: '/images/google.png'
+    desktop: '/images/google.png'
+  features:
+    - title: Webdesign mit Konzept
+      description: Maßgeschneiderte Layouts statt generischer Vorlagen.
+      class: border-l border-primary pl-4
+    - title: Responsive Design
+      description:  Ihre Website sieht auf Handy, Tablet & Desktop perfekt aus.
+      class: border-l border-default pt-4 pl-4
+    - title: SEO-optimiert
+      description: Ihre Zielgruppe findet Sie über Google – nicht nur zufällig.
+      class: border-l border-default pt-4 pl-4
+    - title: Schnelle Ladezeiten
+      description: Performance ist Rankingfaktor – ich sorge dafür
+      class: border-l border-default pt-4 pl-4
+    - title: Pflege und Weiterentwicklung
+      description: Ich kümmere mich um Ihre Website, damit Sie sich um Ihr Geschäft kümmern können.
+      class: border-l border-default pt-4 pl-4
+features:
+  title: In der [Zusammenarbeit]{.text-primary} enthalten
+  description: Ich entwickle Ihre Website mit einem klaren Konzept, das auf Ihre Zielgruppe abgestimmt ist. Dabei achte ich auf die aufgeführten technischen Punkte um Ihre Marke zu stärken und Ihre Zielgruppe zu erreichen.
+  features:
+    - title: Individuelles Webdesign
+      description: Ihre Website ist einzigartig – genau wie Ihr Unternehmen. Ich entwickle Designs und Texte, die Ihre Marke widerspiegeln und Vertrauen schaffen.
+      icon: i-lucide-wand-sparkles
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Responsives Layout
+      description: Immer mehr Menschen besuchen Websites mit dem Smartphone. Ich sorge dafür, dass Ihre Seite überall gut aussieht und funktioniert.
+      icon: i-lucide-monitor-smartphone
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Suchmaschinenoptimierung (SEO) 
+      description: Schon beim Bau Ihrer Website optimiere ich Ladezeiten, Struktur und Inhalte – damit Sie bei Google gefunden werden.
+      icon: i-lucide-search
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Performance & Technik
+      description: Ich setze moderne Technologien ein, achte auf sauberen Code, schnelle Ladezeiten und langfristige Wartbarkeit.
+      icon: i-lucide-code
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Pflege & Weiterentwicklung
+      description: Eine Website ist nie „fertig“. Ich betreue Ihre Seite langfristig und kümmere mich um Updates, Backups und neue Features.
+      icon: i-lucide-laptop
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Benutzerfreundlichkeit
+      description: Ich achte darauf, dass Ihre Website einfach zu bedienen ist. So finden Ihre Kunden schnell, was sie suchen. 
+      icon: i-lucide-user
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+steps:
+  title: So würde ein [Projekt]{.text-primary} mit mir ablaufen
+  description: 
+  items:
+    - title: Kennlernen & Beratung
+      description: unverbindlich und kostenlos
+      image:
+        light: '/images/Kennenlernen.png'
+    - title: Konzeption & Design
+      description: Ihre Ziele, Ihr Stil, Ihre Zielgruppe
+      image:
+        light: '/images/Konzeption.png'
+  
+    - title: Technische Umsetzung
+      description:  modern, sauber, sorgfältig
+      image:
+        light: '/images/Umsetzung.png'
+      
+pricing:
+  title: '[Preisorientierung]{.text-primary}'
+  description: Nach dem Erstgespräch erstelle ich Ihnen ein individuelles Angebot. Die Preise sind abhängig von Ihren Anforderungen und dem Umfang des Projekts. Dennoch hier einige Beispiele für die Preisgestaltung.
+  plans:
+    - title: Webdesign & Entwicklung
+      description: 1-3 Unterseiten ab 799€
+      features:
+        - Individuelles Webdesign
+        - Responsives Layout
+        - Suchmaschinenoptimierung (SEO)
+        - Pflege & Weiterentwicklung
+        - Technische Umsetzung
+        - Performance & Technik
+        - Benutzerfreundlichkeit
+      button:
+        label: Projekt anfragen
+        variant: solid
+        to: '#'
+    - title: Entwicklung einer größeren Website ab 3 Unterseiten
+      description: ab 1.500€
+      features:
+        - Alles aus dem Webdesign-Paket
+        - Branding & Corporate Design
+        - Animationen
+      button:
+        label: Projekt anfragen
+        variant: solid
+        to: '#'
+    - title: Pflege & Wartung
+      description: ab 99€ / Monat
+      features:
+        - Regelmäßige Backups
+        - Updates & Wartung
+        - Technischer Support
+      button:
+        label: Projekt anfragen
+        variant: solid
+        to: '#'
+testimonials:
+  title: Hier einige [Kundenstimmen]{.text-primary}
+  description: Die Zufriedenheit meiner Kunden steht für mich an erster Stelle. Hier einige Stimmen von Kunden, die mit mir zusammengearbeitet haben.
+  items:
+    - quote: Dreams2Code hat mir geholfen, meine Website zu optimieren und sie auf dem Handy zugänglich zu machen. Ich bin sehr zufrieden mit dem Ergebnis!
+      user:
+        name: 'Marie Kullmann'
+        description: 'Lummerland Kinderbetreuung'
+        target: _blank
+        avatar:
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
+    - quote: Die Erstellung meiner Website war ein großer Erfolg. Ich habe viele positive Rückmeldungen von meinen Kunden erhalten. Vielen Dank!
+      user:
+        name: 'Fabian Stauder'
+        description:  'Stauder Gartenpflege'
+        target: _blank
+        avatar:
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
+cta:
+  title: 'Jetzt [Projekt]{.text-primary} anfragen'
+  description: Sie werden zu einem Fragebogen weitergeleitet, den Sie ausfüllen können. Damit kann ich mir vorab einen Überblick verschaffen.
+  links:
+    - label: zum Fragebogen
+      icon: i-lucide-message-square-plus
+      to: '#'
+      target: _blank
