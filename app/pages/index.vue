@@ -19,7 +19,7 @@ useSeoMeta({
   ogDescription: page.value.seo?.description || page.value.description
 })
 
-useTypewriter(heroTitleRef, 'h1', 25)
+//useTypewriter(heroTitleRef, 'h1', 25)
 
 onMounted(() => {
   setTimeout(() => {
@@ -35,7 +35,7 @@ onMounted(() => {
 
     <UPageHero :links="page.hero.links" :ui="{ container: 'md:pt-18 lg:pt-20 lg:h-full' }" class="hero-background">
       <template #title>
-        <div class="transition-opacity duration-6000 ease-out"
+        <div class="transition-opacity duration-200 ease-out"
           :class="{ 'opacity-0': !visible, 'opacity-100': visible }">
           <MDC :value="page.title" class="*:leading-11 sm:*:leading-19 max-w-3xl mx-auto" />
         </div>
@@ -63,7 +63,7 @@ onMounted(() => {
       </template>
 
     <div class="h-[300px] xl:h-[200px]">
-      <NuxtImg :src="page.about.image.src" :alt="page.about.image.alt" format="webp"
+      <NuxtImg :src="page.about.image.src" :alt="page.about.image.alt" loading="lazy" format="webp"
               class="object-contain absolute left-0 bottom-0 " />
     </div>
     </UPageSection>
@@ -115,7 +115,7 @@ onMounted(() => {
       <template #features>
         <UPageCard v-for="(step, index) in page.steps.items" :key="index" class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }">
-          <NuxtImg v-if="step.image" :src="step.image?.src" :alt="step.title"
+          <NuxtImg v-if="step.image" :src="step.image?.src" loading="lazy" width="640px" height="480px" :alt="step.title"
             class="object-contain " />
 
           <div class="flex flex-col gap-2">
@@ -138,6 +138,7 @@ onMounted(() => {
 
         <div class="hidden @min-[1120px]:block">
           <NuxtImg src="/images/light/line-4.svg" 
+            loading="lazy"
             class="absolute top-0 right-0 size-full transform translate-x-[60%]" />
         </div>
       </template>
@@ -154,6 +155,7 @@ onMounted(() => {
       :items="page.testimonials.items">
       <template #headline>
         <NuxtImg src="/images/light/line-5.svg"
+          loading="lazy"
           class="absolute -top-10 sm:top-0 right-1/2 h-24" />
       </template>
       <template #title>
@@ -181,8 +183,10 @@ onMounted(() => {
 
         <div class="@max-[1280px]:hidden">
           <NuxtImg src="/images/light/line-6.svg"
+            loading="lazy"
             class="absolute left-10 -top-10 sm:top-0 h-full" />
-          <NuxtImg light="/images/light/line-7.svg"
+          <NuxtImg src="/images/light/line-7.svg"
+            loading="lazy"
             class="absolute right-0 bottom-0 h-full" />
         </div>
       </template>
