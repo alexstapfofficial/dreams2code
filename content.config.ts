@@ -1,3 +1,4 @@
+import { p } from '#build/ui-pro/prose'
 import { defineCollection, z } from '@nuxt/content'
 
 const createEnum = (options: [string, ...string[]]) => z.enum(options)
@@ -33,6 +34,17 @@ export const collections = {
       hero: z.object({
         links: z.array(createLinkSchema())
       }),
+      about: createBaseSchema().extend({
+        title: z.string().nonempty(),
+        part1: z.string().nonempty(),
+        part2: z.string().nonempty(),
+        part3: z.string().nonempty(),
+        part4: z.string().nonempty(),
+        image: z.object({
+          src: z.string().editor({ input: 'media' }),
+          alt: z.string().optional()
+        })
+      }),
       section: createBaseSchema().extend({
         headline: z.string().optional(),
         images: z.object({
@@ -51,8 +63,7 @@ export const collections = {
       steps: createBaseSchema().extend({
         items: z.array(createFeatureSchema().extend({
           image: z.object({
-            light: z.string().editor({ input: 'media' }),
-            dark: z.string().editor({ input: 'media' })
+            src: z.string().editor({ input: 'media' }),
           }).optional()
         }))
       }),

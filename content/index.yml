@@ -3,7 +3,7 @@ seo:
   description: Dreams2Code ist eine Webdesign- und Entwicklungsagentur aus Unterfranken, die sich auf die Erstellung von modernen, benutzerfreundlichen Websites spezialisiert hat.
   keywords: Webdesign, Entwicklung, Unterfranken, moderne Websites, benutzerfreundliche Websites
 title: '[Websiten]{.text-primary} technisch stark, optisch überzeugend.'
-description: Individuelle Internetpräsenz für Selbstständige & Unternehmen – modern, responsiv & suchmaschinenoptimiert.
+description: „Für alle, deren Website genauso ansprechend sein soll wie ihr Angebot.“
 image:
   src: '/images/hero_dreams2code.webp'
   alt: 'Webdesign & Entwicklung aus Unterfranken'
@@ -16,6 +16,15 @@ hero:
       to: '#'
       target: _blank
       size: xl
+about:
+  title: 'Hi, ich bin [Alex]{.text-primary} – der kreative Kopf hinter dreams2code.'
+  part1: 'Meine Mission ist es, Selbstständigen und kleinen Unternehmen zu einem zeitgemäßen Webauftritt zu verhelfen. Viel zu oft sehe ich großartige lokale Betriebe mit veralteten Websites, die ihrem Angebot einfach nicht mehr gerecht werden. Dabei verdienen diese Unternehmen ein digitales Aushängeschild, das die Qualität ihrer Produkte und Dienstleistungen widerspiegelt.'
+  part2: 'Warum das so selten der Fall ist, liegt auf der Hand: Professionelle Agenturen sind oft zu teuer – schnell landet man im fünfstelligen Bereich. Die Alternative? Baukastensysteme mit Standarddesigns, selbstgeschriebenen Texten und generischen Vorlagen. Verständlich, aber: Wirklich gutes Webdesign braucht mehr. Es beeinflusst, wie ein Unternehmen wahrgenommen wird – und das sollte niemals dem Zufall überlassen werden.'
+  part3: 'Die Anforderungen an moderne Websites sind gestiegen: Mobile Optimierung, schnelle Ladezeiten, durchdachte Farb- und Schriftwahl, SEO – für all das gibt es inzwischen eigene Fachrichtungen. Das macht viele Projekte kompliziert und teuer.'
+  part4: 'Genau hier setzt dreams2code an: Ich arbeite nicht hochspezialisiert, sondern als Allrounder – mit einem Blick für das große Ganze. Bei mir bekommst du kein Agentur-Mammutprojekt, aber deutlich mehr als ein Website-Baukasten je leisten kann. Ich biete dir ein stabiles Fundament für deinen digitalen Auftritt – mit Raum zum Wachsen, so wie dein Unternehmen.'
+  image:
+    src: '/images/Alex.webp'
+    alt: 'Webdesign & Entwicklung aus Unterfranken'
 section:
   title: 'Was ist Ihre [Website]{.text-primary} wert, wenn sie niemand findet?'
   description: Viele Websites sehen hübsch aus, aber sind zu langsam, nicht mobilfähig oder bei Google unsichtbar.
@@ -78,17 +87,17 @@ steps:
   items:
     - title: Kennlernen & Beratung
       description: unverbindlich und kostenlos
-      image:
-        light: '/images/Kennenlernen.png'
+      image: 
+        src: '/images/Kennenlernen.png'
     - title: Konzeption & Design
       description: Ihre Ziele, Ihr Stil, Ihre Zielgruppe
       image:
-        light: '/images/Konzeption.png'
+        src: '/images/Konzeption.png'
   
     - title: Technische Umsetzung
       description:  modern, sauber, sorgfältig
       image:
-        light: '/images/Umsetzung.png'
+        src: '/images/Umsetzung.png'
       
 pricing:
   title: '[Preisorientierung]{.text-primary}'
@@ -137,15 +146,11 @@ testimonials:
         name: 'Marie Kullmann'
         description: 'Lummerland Kinderbetreuung'
         target: _blank
-        avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
     - quote: Die Erstellung meiner Website war ein großer Erfolg. Ich habe viele positive Rückmeldungen von meinen Kunden erhalten. Vielen Dank!
       user:
         name: 'Fabian Stauder'
         description:  'Stauder Gartenpflege'
         target: _blank
-        avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
 cta:
   title: 'Jetzt [Projekt]{.text-primary} anfragen'
   description: Sie werden zu einem Fragebogen weitergeleitet, den Sie ausfüllen können. Damit kann ich mir vorab einen Überblick verschaffen.
