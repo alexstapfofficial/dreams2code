@@ -5,8 +5,8 @@ seo:
 title: '[Websiten]{.text-primary} technisch stark, optisch überzeugend.'
 description: Individuelle Internetpräsenz für Selbstständige & Unternehmen – modern, responsiv & suchmaschinenoptimiert.
 image:
-  src: '/images/hero_dreams2code.webp'
-  alt: 'Webdesign & Entwicklung aus Unterfranken'
+  src: /images/hero_dreams2code.webp
+  alt: Webdesign & Entwicklung aus Unterfranken
 hero:
   links:
     - label: Projekt anfragen
@@ -17,17 +17,17 @@ hero:
       target: _blank
       size: xl
 section:
-  title: 'Was ist Ihre [Website]{.text-primary} wert, wenn sie niemand findet?'
+  title: Was ist Ihre [Website]{.text-primary} wert, wenn sie niemand findet?
   description: Viele Websites sehen hübsch aus, aber sind zu langsam, nicht mobilfähig oder bei Google unsichtbar.
   images:
-    mobile: '/images/google.png'
-    desktop: '/images/google.png'
+    mobile: /images/google.png
+    desktop: /images/google.png
   features:
     - title: Webdesign mit Konzept
       description: Maßgeschneiderte Layouts statt generischer Vorlagen.
       class: border-l border-primary pl-4
     - title: Responsive Design
-      description:  Ihre Website sieht auf Handy, Tablet & Desktop perfekt aus.
+      description: Ihre Website sieht auf Handy, Tablet & Desktop perfekt aus.
       class: border-l border-default pt-4 pl-4
     - title: SEO-optimiert
       description: Ihre Zielgruppe findet Sie über Google – nicht nur zufällig.
@@ -52,7 +52,7 @@ features:
       icon: i-lucide-monitor-smartphone
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Suchmaschinenoptimierung (SEO) 
+    - title: Suchmaschinenoptimierung (SEO)
       description: Schon beim Bau Ihrer Website optimiere ich Ladezeiten, Struktur und Inhalte – damit Sie bei Google gefunden werden.
       icon: i-lucide-search
       ui:
@@ -68,28 +68,26 @@ features:
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Benutzerfreundlichkeit
-      description: Ich achte darauf, dass Ihre Website einfach zu bedienen ist. So finden Ihre Kunden schnell, was sie suchen. 
+      description: Ich achte darauf, dass Ihre Website einfach zu bedienen ist. So finden Ihre Kunden schnell, was sie suchen.
       icon: i-lucide-user
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 steps:
   title: So würde ein [Projekt]{.text-primary} mit mir ablaufen
-  description: 
+  description: ''
   items:
     - title: Kennlernen & Beratung
       description: unverbindlich und kostenlos
       image:
-        light: '/images/Kennenlernen.png'
+        light: /images/Kennenlernen.png
     - title: Konzeption & Design
       description: Ihre Ziele, Ihr Stil, Ihre Zielgruppe
       image:
-        light: '/images/Konzeption.png'
-  
+        light: /images/Konzeption.png
     - title: Technische Umsetzung
-      description:  modern, sauber, sorgfältig
+      description: modern, sauber, sorgfältig
       image:
-        light: '/images/Umsetzung.png'
-      
+        light: /images/Umsetzung.png
 pricing:
   title: '[Preisorientierung]{.text-primary}'
   description: Nach dem Erstgespräch erstelle ich Ihnen ein individuelles Angebot. Die Preise sind abhängig von Ihren Anforderungen und dem Umfang des Projekts. Dennoch hier einige Beispiele für die Preisgestaltung.
@@ -134,20 +132,20 @@ testimonials:
   items:
     - quote: Dreams2Code hat mir geholfen, meine Website zu optimieren und sie auf dem Handy zugänglich zu machen. Ich bin sehr zufrieden mit dem Ergebnis!
       user:
-        name: 'Marie Kullmann'
-        description: 'Lummerland Kinderbetreuung'
+        name: Marie Kullmann
+        description: Lummerland Kinderbetreuung
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
+          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19
     - quote: Die Erstellung meiner Website war ein großer Erfolg. Ich habe viele positive Rückmeldungen von meinen Kunden erhalten. Vielen Dank!
       user:
-        name: 'Fabian Stauder'
-        description:  'Stauder Gartenpflege'
+        name: Fabian Stauder
+        description: Stauder Gartenpflege
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
+          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux
 cta:
-  title: 'Jetzt [Projekt]{.text-primary} anfragen'
+  title: Jetzt [Projekt]{.text-primary} starten
   description: Sie werden zu einem Fragebogen weitergeleitet, den Sie ausfüllen können. Damit kann ich mir vorab einen Überblick verschaffen.
   links:
     - label: zum Fragebogen
