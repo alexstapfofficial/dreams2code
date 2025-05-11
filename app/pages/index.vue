@@ -79,7 +79,8 @@ onMounted(() => {
         <MDC :value="page.section.title" class="sm:*:leading-11" />
       </template>
       <NuxtImg format="webp" :src="page.section.images.desktop" :alt="page.section.title" width="640" height="480"
-        class="left-0 w-full max-w-2xl soft" />
+        class="left-0 w-full max-w-2xl soft"
+        sizes="320px sm:50vw" />
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
@@ -111,19 +112,25 @@ onMounted(() => {
       </template>
 
       <template #features>
-        <UPageCard v-for="(step, index) in page.steps.items" :key="index" class="group"
+        <UPageCard v-for="(step, index) in page.steps.items" :key="index" orientation="vertical" :reverse="true"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }">
-          <NuxtImg v-if="step.image" :src="step.image?.src" loading="lazy" width="640" height="480" :alt="step.title"
-            class="object-contain rounded-lg" />
+         
+         
+            <NuxtImg v-if="step.image" :src="step.image?.src" loading="lazy" width="640" height="480" :alt="step.title"
+              class="object-contain rounded-lg" />
+         
 
-          <div class="flex flex-col gap-2">
-            <span class="text-lg font-semibold">
+        <template #title>
+          <span class="text-lg font-semibold">
               {{ step.title }}
             </span>
-            <span class="text-sm text-muted">
+        </template>
+
+        <template #description>
+          <span class="text-sm text-muted">
               {{ step.description }}
             </span>
-          </div>
+        </template>
         </UPageCard>
       </template>
     </UPageSection>
