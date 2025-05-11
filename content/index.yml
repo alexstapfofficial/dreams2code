@@ -100,7 +100,7 @@ steps:
         src: '/images/Umsetzung.png'
       
 pricing:
-  title: '[Preisorientierung]{.text-primary}'
+  title: Preisgestaltung
   description: Nach dem Erstgespräch erstelle ich Ihnen ein individuelles Angebot. Die Preise sind abhängig von Ihren Anforderungen und dem Umfang des Projekts. Dennoch hier einige Beispiele für die Preisgestaltung.
   plans:
     - title: Webdesign & Entwicklung

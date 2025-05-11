@@ -19,12 +19,12 @@ useSeoMeta({
   ogDescription: page.value.seo?.description || page.value.description
 })
 
-//useTypewriter(heroTitleRef, 'h1', 25)
+useTypewriter(heroTitleRef, 'h1', 25)
 
 onMounted(() => {
   setTimeout(() => {
     visible.value = true
-  }, 50) // kleiner Delay für eleganten Effekt
+  }, 450) // kleiner Delay für eleganten Effekt
 })
 </script>
 
@@ -35,7 +35,7 @@ onMounted(() => {
 
     <UPageHero :links="page.hero.links" :ui="{ container: 'md:pt-18 lg:pt-20 lg:h-full' }" class="hero-background">
       <template #title>
-        <div class="transition-opacity duration-200 ease-out"
+        <div class="transition-opacity duration-2000 ease-out"
           :class="{ 'opacity-0': !visible, 'opacity-100': visible }">
           <MDC :value="page.title" class="*:leading-11 sm:*:leading-19 max-w-3xl mx-auto" />
         </div>
@@ -63,7 +63,7 @@ onMounted(() => {
       </template>
 
     <div class="h-[300px] xl:h-[200px]">
-      <NuxtImg :src="page.about.image.src" :alt="page.about.image.alt" loading="lazy" format="webp"
+      <NuxtImg :src="page.about.image.src" :alt="page.about.image.alt" loading="lazy" format="webp"  width="400" height="400"
               class="object-contain absolute left-0 bottom-0 " />
     </div>
     </UPageSection>
@@ -78,10 +78,8 @@ onMounted(() => {
       <template #title>
         <MDC :value="page.section.title" class="sm:*:leading-11" />
       </template>
-      <NuxtImg format="webp" :src="page.section.images.desktop" :alt="page.section.title"
-        class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl soft" />
-      <NuxtImg format="webp" :src="page.section.images.mobile" :alt="page.section.title"
-        class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl soft" />
+      <NuxtImg format="webp" :src="page.section.images.desktop" :alt="page.section.title" width="640" height="480"
+        class="left-0 w-full max-w-2xl soft" />
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
@@ -95,7 +93,7 @@ onMounted(() => {
       <template #title>
         <MDC :value="page.features.title" class="*:leading-9" />
         <div class="hidden @min-[1020px]:block">
-          <UColorModeImage light="/images/light/line-2.svg" dark="/images/dark/line-2.svg"
+          <NuxtImg src="/images/light/line-2.svg"
             class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]" />
         </div>
       </template>
@@ -105,7 +103,7 @@ onMounted(() => {
 
     <UPageSection id="steps" :description="page.steps.description" class="relative overflow-hidden">
       <template #headline>
-        <UColorModeImage light="/images/light/line-3.svg" dark="/images/dark/line-3.svg"
+        <NuxtImg src="/images/light/line-3.svg" 
           class="absolute -top-10 sm:top-0 right-1/2 h-24" />
       </template>
       <template #title>
@@ -115,8 +113,8 @@ onMounted(() => {
       <template #features>
         <UPageCard v-for="(step, index) in page.steps.items" :key="index" class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }">
-          <NuxtImg v-if="step.image" :src="step.image?.src" loading="lazy" width="640px" height="480px" :alt="step.title"
-            class="object-contain " />
+          <NuxtImg v-if="step.image" :src="step.image?.src" loading="lazy" width="640" height="480" :alt="step.title"
+            class="object-contain rounded-lg" />
 
           <div class="flex flex-col gap-2">
             <span class="text-lg font-semibold">
