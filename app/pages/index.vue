@@ -54,33 +54,34 @@ onMounted(() => {
         <MDC :value="page.about.title" class="sm:*:leading-11 w-full max-w-2xl" />
       </template>
       <template #description>
-          <div class="font-robotoslab">
-            <MDC :value="page.about.part1" class="text-left" />
-            <MDC :value="page.about.part2" class="text-left" />
-            <MDC :value="page.about.part3" class="text-left" />
-            <MDC :value="page.about.part4" class="text-left" />
+        <div class="sm:flex">
+          <div class="sm:w-1/2">
+            <MDC :value="page.about.part1" class="text-left font-robotoslab" />
+            <MDC :value="page.about.part2" class="font-bold text-primary text-xl" />
+            <MDC :value="page.about.part3" class="text-left font-robotoslab" />
+            <MDC :value="page.about.part4" class="font-bold text-gray-900 text-2xl" />
           </div>
+          <div class="h-[300px] xl:h-[200px]">
+            <NuxtImg :src="page.about.image.src" :alt="page.about.image.alt" loading="lazy" format="webp"  width="400" height="400"
+                    class="object-contain absolute right-0 bottom-0 sm:bottom-20 sm:w-1/3 " />
+          </div>
+        </div>
       </template>
 
-    <div class="h-[300px] xl:h-[200px]">
-      <NuxtImg :src="page.about.image.src" :alt="page.about.image.alt" loading="lazy" format="webp"  width="400" height="400"
-              class="object-contain absolute left-0 bottom-0 " />
-    </div>
     </UPageSection>
 
         
 
-    <UPageSection :description="page.section.description" :features="page.section.features" orientation="horizontal"
+    <UPageSection :description="page.section.description" :features="page.section.features"
       :ui="{
-        container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
+        container: 'mx-0 sm:mx-auto w-full md:mr-10',
+        description: 'text-left',
+        title: 'text-left',
         features: 'gap-0'
       }" reverse>
       <template #title>
-        <MDC :value="page.section.title" class="sm:*:leading-11" />
+        <MDC :value="page.section.title" class="sm:*:leading-11 text-2xl sm:text-5xl" />
       </template>
-      <NuxtImg format="webp" :src="page.section.images.desktop" :alt="page.section.title" width="640" height="480"
-        class="left-0 w-full max-w-2xl soft"
-        sizes="320px sm:50vw" />
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
@@ -93,10 +94,6 @@ onMounted(() => {
       <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <template #title>
         <MDC :value="page.features.title" class="*:leading-9" />
-        <div class="hidden @min-[1020px]:block">
-          <NuxtImg src="/images/light/line-2.svg"
-            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]" />
-        </div>
       </template>
     </UPageSection>
 

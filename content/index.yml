@@ -3,13 +3,13 @@ seo:
   description: Dreams2Code ist eine Webdesign- und Entwicklungsagentur aus Unterfranken, die sich auf die Erstellung von modernen, benutzerfreundlichen Websites spezialisiert hat.
   keywords: Webdesign, Entwicklung, Unterfranken, moderne Websites, benutzerfreundliche Websites
 title: '[Websiten]{.text-primary} technisch stark, optisch überzeugend.'
-description: „Für alle, deren Website genauso ansprechend sein soll wie ihr Angebot.“
+description: „Für Unternehmen, die auch online zeigen wollen, was sie wirklich können. Weil es für den ersten Eindruck keine zweite Chance gibt.“
 image:
   src: /images/hero_dreams2code.webp
   alt: Webdesign & Entwicklung aus Unterfranken
 hero:
   links:
-    - label: Projekt anfragen
+    - label: kostenloses Erstgespräch
       icon: i-lucide-message-square-plus
       trailing: true
       variant: solid
@@ -18,42 +18,50 @@ hero:
       size: xl
 about:
   title: 'Hi, ich bin [Alex]{.text-primary} – der kreative Kopf hinter dreams2code.'
-  part1: 'Meine Mission ist es, Selbstständigen und kleinen Unternehmen zu einem zeitgemäßen Webauftritt zu verhelfen. Viel zu oft sehe ich großartige lokale Betriebe mit veralteten Websites, die ihrem Angebot einfach nicht mehr gerecht werden. Dabei verdienen diese Unternehmen ein digitales Aushängeschild, das die Qualität ihrer Produkte und Dienstleistungen widerspiegelt.'
-  part2: 'Warum das so selten der Fall ist, liegt auf der Hand: Professionelle Agenturen sind oft zu teuer – schnell landet man im fünfstelligen Bereich. Die Alternative? Baukastensysteme mit Standarddesigns, selbstgeschriebenen Texten und generischen Vorlagen. Verständlich, aber: Wirklich gutes Webdesign braucht mehr. Es beeinflusst, wie ein Unternehmen wahrgenommen wird – und das sollte niemals dem Zufall überlassen werden.'
-  part3: 'Die Anforderungen an moderne Websites sind gestiegen: Mobile Optimierung, schnelle Ladezeiten, durchdachte Farb- und Schriftwahl, SEO – für all das gibt es inzwischen eigene Fachrichtungen. Das macht viele Projekte kompliziert und teuer.'
-  part4: 'Genau hier setzt dreams2code an: Ich arbeite nicht hochspezialisiert, sondern als Allrounder – mit einem Blick für das große Ganze. Bei mir bekommst du kein Agentur-Mammutprojekt, aber deutlich mehr als ein Website-Baukasten je leisten kann. Ich biete dir ein stabiles Fundament für deinen digitalen Auftritt – mit Raum zum Wachsen, so wie dein Unternehmen.'
+  part1: 'Ich erinnere mich an einen kleinen Handwerksbetrieb in meiner Nachbarschaft: erstklassige Arbeit, tolles Team, spürbare Leidenschaft. Aber die Website? Veraltet, unübersichtlich, nicht mobilfähig.'
+  part2: 'Ich dachte: Schade. Wer euch online sieht, hat keine Ahnung, wie gut ihr wirklich seid.'
+  part3: 'Seitdem sehe ich sie überall: großartige lokale Unternehmen, die online nicht mithalten – nicht, weil sie schlecht sind, sondern weil Zeit, Know-how oder Budget fehlen. Und genau das ist der Grund, warum ich dreams2code gegründet habe.'
+  part4: 'Ich kümmere mich um Ihren [Webauftritt]{.text-primary} – damit Sie sich auf das konzentrieren, was Sie am besten können: Ihr [Tagesgeschäft]{.text-primary}.'
   image:
     src: '/images/Alex.webp'
     alt: 'Webdesign & Entwicklung aus Unterfranken'
 section:
-  title: Was ist Ihre [Website]{.text-primary} wert, wenn sie niemand findet?
-  description: Viele Websites sehen hübsch aus, aber sind zu langsam, nicht mobilfähig oder bei Google unsichtbar.
+  title: 'Was eine veralterte [Website]{.text-primary} heute über Ihr Unternehmen verrät – und warum das [gefährlich]{.text-primary} sein kann:'
+  description: 'Ein potenzieller Kunde googelt Ihr Unternehmen. Er klickt auf Ihre Website – und was er sieht, wirkt wie aus einem anderen Jahrzehnt: unscharfe Bilder, schwer lesbarer Text am Handy, Ladezeit wie in der Steinzeit. Kein SSL, keine klare Botschaft, keine moderne Optik. Er zögert. Er fragt sich: „Ist dieses Unternehmen überhaupt noch aktiv? Professionell? Vertrauenswürdig?“ Und er klickt weiter – zur Konkurrenz.'
   images:
     mobile: /images/google.png
     desktop: /images/google.png
   features:
-    - title: Webdesign mit Konzept
-      description: Maßgeschneiderte Layouts statt generischer Vorlagen.
+    - title: Sicherheitsrisiko
+      description: Warnhinweise im Browser durch fehlendes SSL-Zertifikat lassen Ihr Unternehmen sofort unseriös erscheinen.
       class: border-l border-primary pl-4
-    - title: Responsive Design
-      description: Ihre Website sieht auf Handy, Tablet & Desktop perfekt aus.
+    - title: Keine Optimierung für Mobilgeräte
+      description: Nicht mobil optimierte Seiten sind auf dem Smartphone kaum lesbar und damit praktisch unbrauchbar.
+      class: border-l border-primary pl-4
+    - title: Schlechte Performance
+      description: Lange Ladezeiten führen dazu, dass Besucher abspringen, noch bevor Ihre Inhalte überhaupt sichtbar sind.
       class: border-l border-default pt-4 pl-4
-    - title: SEO-optimiert
-      description: Ihre Zielgruppe findet Sie über Google – nicht nur zufällig.
+    - title: Keine SEO-Optimierung
+      description: Das sorgt dafür, dass Sie bei Google gar nicht erst gefunden werden.
       class: border-l border-default pt-4 pl-4
-    - title: Schnelle Ladezeiten
-      description: Performance ist Rankingfaktor – ich sorge dafür
+    - title: DSGVO-Verstöße
+      description: Unvollständige oder fehlende Rechtstexte wie Impressum und Datenschutzerklärung machen Ihre Seite zur Abmahnfalle.
       class: border-l border-default pt-4 pl-4
-    - title: Pflege und Weiterentwicklung
-      description: Ich kümmere mich um Ihre Website, damit Sie sich um Ihr Geschäft kümmern können.
+    - title: Schwache Texte
+      description: Texte, die nur von Ihnen handeln, aber nicht den Kunden abholen, überzeugen nicht, sie verkaufen nicht.
       class: border-l border-default pt-4 pl-4
 features:
-  title: In der [Zusammenarbeit]{.text-primary} enthalten
-  description: Ich entwickle Ihre Website mit einem klaren Konzept, das auf Ihre Zielgruppe abgestimmt ist. Dabei achte ich auf die aufgeführten technischen Punkte um Ihre Marke zu stärken und Ihre Zielgruppe zu erreichen.
+  title: 'Ihr [Webauftritt]{.text-primary} soll verkaufen, nicht [abschrecken]{.text-primary}'
+  description: 'Genau deshalb habe ich ein durchdachtes Leistungspaket geschnürt, das gezielt auf die typischen Schwachstellen veralteter Websites eingeht: technisch, visuell und inhaltlich. Keine überteuerten Agenturpakete, keine Standard-Baukästen, sondern ein ehrlicher, klarer Ansatz für moderne, wirksame Websites. Ob Ihre Seite einen frischen Look braucht, besser auf Google gefunden werden soll oder einfach wieder Vertrauen schaffen soll – ich bringe sie auf den neuesten Stand. Passend zu Ihrem Unternehmen. Verständlich. Und zukunftssicher.'
   features:
     - title: Individuelles Webdesign
       description: Ihre Website ist einzigartig – genau wie Ihr Unternehmen. Ich entwickle Designs und Texte, die Ihre Marke widerspiegeln und Vertrauen schaffen.
       icon: i-lucide-wand-sparkles
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Verkaufszentrierte Texte
+      description: Ich schreibe Texte, die Ihre Zielgruppe ansprechen und überzeugen. So gewinnen Sie neue Kunden und steigern Ihren Umsatz.
+      icon: i-lucide-brain
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Responsives Layout
@@ -66,75 +74,60 @@ features:
       icon: i-lucide-search
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Performance & Technik
-      description: Ich setze moderne Technologien ein, achte auf sauberen Code, schnelle Ladezeiten und langfristige Wartbarkeit.
-      icon: i-lucide-code
+    - title: Sicherheitszertifikat
+      description: Ihre Website wird mit einem SSL-Zertifikat ausgestattet. So sind Ihre Daten und die Ihrer Kunden sicher.
+      icon: i-lucide-shield-check
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Pflege & Weiterentwicklung
-      description: Eine Website ist nie „fertig“. Ich betreue Ihre Seite langfristig und kümmere mich um Updates, Backups und neue Features.
+    - title: DSGVO-konform
+      description: Die rechtlichen Anforderungen an Ihre Website werden erfüllt. Ich lasse Impressum, Datenschutzerklärung und Cookie-Hinweis von einer Kanzlei erstellen und binde Sie in die Seite ein.
       icon: i-lucide-laptop
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Benutzerfreundlichkeit
-      description: Ich achte darauf, dass Ihre Website einfach zu bedienen ist. So finden Ihre Kunden schnell, was sie suchen.
-      icon: i-lucide-user
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 steps:
-  title: So würde ein [Projekt]{.text-primary} mit mir ablaufen
+  title: So läuft die [Transformation]{.text-primary} ab.
   description: ''
   items:
     - title: Kennlernen & Beratung
-      description: unverbindlich und kostenlos
+      description: Gemeinsam finden wir heraus, was Sie brauchen. Ich sammele alle Informationen, die ich für die Umsetzung benötige. Sie erhalten ein umfassendes Angebot.
       image: 
         src: '/images/Kennenlernen.png'
     - title: Konzeption & Design
-      description: Ihre Ziele, Ihr Stil, Ihre Zielgruppe
+      description: Nachdem ich ihre Zielgruppe und Ihre Ziele kenne, erstelle ich ein individuelles Design. Ich entwickle Texte, die Ihre Kunden ansprechen und überzeugen.
       image:
         src: '/images/Konzeption.png'
   
     - title: Technische Umsetzung
-      description: modern, sauber, sorgfältig
+      description: Ich setze das Design technisch um. Ihre Website wird auf einem schnellen Server gehostet und mit einem SSL-Zertifikat ausgestattet.
       image:
         src: '/images/Umsetzung.png'
       
 pricing:
-  title: Preisgestaltung
-  description: Nach dem Erstgespräch erstelle ich Ihnen ein individuelles Angebot. Die Preise sind abhängig von Ihren Anforderungen und dem Umfang des Projekts. Dennoch hier einige Beispiele für die Preisgestaltung.
+  title: Ihre [Investition]{.text-primary}
+  description: 'Die Kosten für Ihre Website-Transformation hängen natürlich von Ihren individuellen Anforderungen ab. Diese Festpreise sind als Orientierung gedacht.'
   plans:
-    - title: Webdesign & Entwicklung
-      description: 1-3 Unterseiten ab 799€
+    - title: Webtransformation
+      description: ab 799€
       features:
         - Individuelles Webdesign
         - Responsives Layout
         - Suchmaschinenoptimierung (SEO)
-        - Pflege & Weiterentwicklung
-        - Technische Umsetzung
-        - Performance & Technik
-        - Benutzerfreundlichkeit
+        - Texterstellung
+        - Domainumzug & SSL-Zertifikat
+        - DSGVO-konform
       button:
-        label: Projekt anfragen
-        variant: solid
-        to: '#'
-    - title: Entwicklung einer größeren Website ab 3 Unterseiten
-      description: ab 1.500€
-      features:
-        - Alles aus dem Webdesign-Paket
-        - Branding & Corporate Design
-        - Animationen
-      button:
-        label: Projekt anfragen
+        label: Beratung anfragen
         variant: solid
         to: '#'
     - title: Pflege & Wartung
-      description: ab 99€ / Monat
+      description: ab 99€/Monat
       features:
         - Regelmäßige Backups
         - Updates & Wartung
-        - Technischer Support
+        - Kleine Inhaltsänderungen (z.B. Texte, Bilder)
+        - Rechtstexte aktualisieren
       button:
-        label: Projekt anfragen
+        label: Beratung anfragen
         variant: solid
         to: '#'
 testimonials:
@@ -152,8 +145,8 @@ testimonials:
         description: Stauder Gartenpflege
         target: _blank
 cta:
-  title: Jetzt [Projekt]{.text-primary} starten
-  description: Sie werden zu einem Fragebogen weitergeleitet, den Sie ausfüllen können. Damit kann ich mir vorab einen Überblick verschaffen.
+  title: Jetzt [Beratungsgespräch]{.text-primary} anfragen
+  description: 'Ich freue mich darauf, Sie kennenzulernen und Ihre Website zu transformieren. Lassen Sie uns gemeinsam Ihre Ziele erreichen!'
   links:
     - label: zum Fragebogen
       icon: i-lucide-message-square-plus
