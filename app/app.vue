@@ -21,7 +21,7 @@ onMounted(() => {
     appear.value = true
     setTimeout(() => {
       appeared.value = true
-    }, 800)
+    },0)
   }, 0)
 })
 </script>
