@@ -1,0 +1,6 @@
+# Zugriff für alle Suchmaschinen erlauben
+User-agent: *
+Disallow:
+
+# Sitemap (bitte Domain ggf. anpassen)
+Sitemap: https://www.dreams2code.de/sitemap.xml
