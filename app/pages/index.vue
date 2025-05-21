@@ -50,7 +50,7 @@ onMounted(() => {
             class="absolute inset-0 w-full h-full object-cover bg-repeat pointer-events-none -z-10"
             decoding="async"
             preload
-            loading="lazy"
+            loading="eager"
           />
       </UPageHero>
 
