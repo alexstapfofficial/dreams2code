@@ -39,8 +39,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://www.dreams2code.de', // <- unbedingt anpassen!
-    name: 'Dreams2Code',
+    siteUrl: 'https://www.dreams2code.de', // <- unbedingt anpassen!
   },
 
   eslint: {
