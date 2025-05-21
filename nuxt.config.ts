@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui-pro',
     '@nuxt/content',
-    '@nuxtjs/sitemap',
   ],
 
   devtools: {
@@ -36,10 +35,6 @@ export default defineNuxtConfig({
         '/'
       ]
     }
-  },
-
-  site: {
-    siteUrl: 'https://www.dreams2code.de', // <- unbedingt anpassen!
   },
 
   eslint: {
