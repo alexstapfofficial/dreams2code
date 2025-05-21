@@ -32,21 +32,27 @@ onMounted(() => {
   <div v-if="page" class="relative">
     <UBanner title="Diese Seite befindet sich nur zu Testzwecken online" class="font-robotoslab" />
 
-
-    <UPageHero :links="page.hero.links" :ui="{ container: 'md:pt-18 lg:pt-20 lg:h-full' }" class="hero-background">
-      <template #title>
-        <div class="transition-opacity duration-2000 ease-out"
-          :class="{ 'opacity-0': !visible, 'opacity-100': visible }">
-          <MDC :value="page.title" class="*:leading-11 sm:*:leading-19 max-w-3xl mx-auto" />
-        </div>
-      </template>
-      <template #description>
-        <div ref="heroTitleRef" v-show="visible">
-          <h1>{{ page.description }}</h1>
-        </div>
-
-      </template>
-    </UPageHero>
+      <UPageHero :links="page.hero.links" :ui="{ container: 'md:pt-18 lg:pt-20 lg:h-full' }">
+        <template #title>
+          <div class="transition-opacity duration-2000 ease-out"
+            :class="{ 'opacity-0': !visible, 'opacity-100': visible }">
+            <MDC :value="page.title" class="*:leading-11 sm:*:leading-19 max-w-3xl mx-auto" />
+          </div>
+        </template>
+        <template #description>
+          <div ref="heroTitleRef" v-show="visible">
+            <h1>{{ page.description }}</h1>
+          </div>
+        </template>
+        <NuxtImg
+            src="/images/circuit-board.svg"
+            alt="background"
+            class="absolute inset-0 w-full h-full object-cover bg-repeat pointer-events-none -z-10"
+            decoding="async"
+            preload
+            loading="lazy"
+          />
+      </UPageHero>
 
     <UPageSection id="about" :title="page.about.title" :description="page.about.description"
       :ui="{ title: 'text-left', description: 'text-left' }" class="relative overflow-hidden">
@@ -59,10 +65,10 @@ onMounted(() => {
             <MDC :value="page.about.part1" class="text-left font-robotoslab" />
             <MDC :value="page.about.part2" class="font-bold text-primary text-xl" />
             <MDC :value="page.about.part3" class="text-left font-robotoslab" />
-            <MDC :value="page.about.part4" class="font-bold text-gray-900 text-2xl" />
+            <MDC :value="page.about.part4" class="font-bold text-gray-900 text-xl" />
           </div>
           <div class="h-[300px] xl:h-[200px]">
-            <NuxtImg :src="page.about.image.src" :alt="page.about.image.alt" loading="lazy" format="webp"  width="400" height="400"
+            <NuxtImg :src="page.about.image.src" :alt="page.about.image.alt" loading="lazy"  width="400" height="400"
                     class="object-contain absolute right-0 bottom-0 sm:bottom-20 sm:w-1/3 " />
           </div>
         </div>
@@ -77,7 +83,7 @@ onMounted(() => {
         container: 'mx-0 sm:mx-auto w-full md:mr-10',
         description: 'text-left',
         title: 'text-left',
-        features: 'gap-0'
+        features: 'gap-4'
       }" reverse>
       <template #title>
         <MDC :value="page.section.title" class="sm:*:leading-11 text-2xl sm:text-5xl" />
@@ -101,7 +107,8 @@ onMounted(() => {
 
     <UPageSection id="steps" :description="page.steps.description" class="relative overflow-hidden">
       <template #headline>
-        <NuxtImg src="/images/light/line-3.svg" 
+        <NuxtImg src="/images/light/line-3.svg" alt="decoration"
+          loading="lazy"
           class="absolute -top-10 sm:top-0 right-1/2 h-24" />
       </template>
       <template #title>
@@ -113,7 +120,7 @@ onMounted(() => {
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }">
          
          
-            <NuxtImg v-if="step.image" :src="step.image?.src" loading="lazy" width="640" height="480" :alt="step.title"
+            <NuxtImg v-if="step.image" :src="step.image?.src" loading="lazy" width="640" height="480" :alt="step.title" format="webp"
               class="object-contain rounded-lg" />
          
 
@@ -141,6 +148,7 @@ onMounted(() => {
         <div class="hidden @min-[1120px]:block">
           <NuxtImg src="/images/light/line-4.svg" 
             loading="lazy"
+            alt="decoration"
             class="absolute top-0 right-0 size-full transform translate-x-[60%]" />
         </div>
       </template>
@@ -158,6 +166,7 @@ onMounted(() => {
       <template #headline>
         <NuxtImg src="/images/light/line-5.svg"
           loading="lazy"
+          alt="decoration"
           class="absolute -top-10 sm:top-0 right-1/2 h-24" />
       </template>
       <template #title>
@@ -186,9 +195,11 @@ onMounted(() => {
         <div class="@max-[1280px]:hidden">
           <NuxtImg src="/images/light/line-6.svg"
             loading="lazy"
+            alt="decoration"
             class="absolute left-10 -top-10 sm:top-0 h-full" />
           <NuxtImg src="/images/light/line-7.svg"
             loading="lazy"
+            alt="decoration"
             class="absolute right-0 bottom-0 h-full" />
         </div>
       </template>

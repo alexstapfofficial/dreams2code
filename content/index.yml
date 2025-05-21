@@ -40,16 +40,16 @@ section:
       class: border-l border-primary pl-4
     - title: Schlechte Performance
       description: Lange Ladezeiten führen dazu, dass Besucher abspringen, noch bevor Ihre Inhalte überhaupt sichtbar sind.
-      class: border-l border-default pt-4 pl-4
+      class: border-l border-primary pl-4 
     - title: Keine SEO-Optimierung
       description: Das sorgt dafür, dass Sie bei Google gar nicht erst gefunden werden.
-      class: border-l border-default pt-4 pl-4
+      class: border-l border-primary pl-4
     - title: DSGVO-Verstöße
       description: Unvollständige oder fehlende Rechtstexte wie Impressum und Datenschutzerklärung machen Ihre Seite zur Abmahnfalle.
-      class: border-l border-default pt-4 pl-4
+      class: border-l border-primary pl-4
     - title: Schwache Texte
       description: Texte, die nur von Ihnen handeln, aber nicht den Kunden abholen, überzeugen nicht, sie verkaufen nicht.
-      class: border-l border-default pt-4 pl-4
+      class: border-l border-primary pl-4
 features:
   title: 'Ihr [Webauftritt]{.text-primary} soll verkaufen, nicht [abschrecken]{.text-primary}'
   description: 'Genau deshalb habe ich ein durchdachtes Leistungspaket geschnürt, das gezielt auf die typischen Schwachstellen veralteter Websites eingeht: technisch, visuell und inhaltlich. Keine überteuerten Agenturpakete, keine Standard-Baukästen, sondern ein ehrlicher, klarer Ansatz für moderne, wirksame Websites. Ob Ihre Seite einen frischen Look braucht, besser auf Google gefunden werden soll oder einfach wieder Vertrauen schaffen soll – ich bringe sie auf den neuesten Stand. Passend zu Ihrem Unternehmen. Verständlich. Und zukunftssicher.'

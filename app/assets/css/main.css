@@ -7,9 +7,11 @@
   --font-sans: 'Public Sans', sans-serif;
 }
 
-@theme {
-  --color-background: #F3F0E8;
+:root {
+  --ui-primary: #ff6600;
+  --ui-primary-foreground: #ffffff;
 }
+
 
 /* assets/css/fonts.css */
 .font-robotoslab {

@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui-pro',
     '@nuxt/content',
-    '@nuxtjs/google-fonts',
   ],
 
   devtools: {
@@ -16,7 +15,7 @@ export default defineNuxtConfig({
     colorMode: false,
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ['@/assets/css/main.css'],
 
   mdc: {
     highlight: {
@@ -38,6 +37,7 @@ export default defineNuxtConfig({
     }
   },
 
+
   eslint: {
     config: {
       stylistic: {
@@ -46,11 +46,4 @@ export default defineNuxtConfig({
       }
     }
   },
-
-  googleFonts: {
-    families: {
-      Roboto_Slab: [400, 700],
-    },
-    display: 'swap'
-  }
 })
