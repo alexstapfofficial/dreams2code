@@ -144,6 +144,10 @@ testimonials:
         name: Fabian Stauder
         description: Stauder Gartenpflege
         target: _blank
+contact:
+  title: Lass uns über dein [Projekt]{.text-primary} sprechen.
+  description: 'Beschreibe kurz, was du dir vorstellst oder welche Fragen du hast. Gemeinsam finden wir heraus, wie deine Website deine Ziele besser erreichen kann.'
+  highlight: Ich melde mich innerhalb von 24 Stunden persönlich bei dir.
 cta:
   title: Jetzt [Beratungsgespräch]{.text-primary} anfragen
   description: 'Ich freue mich darauf, Sie kennenzulernen und Ihre Website zu transformieren. Lassen Sie uns gemeinsam Ihre Ziele erreichen!'

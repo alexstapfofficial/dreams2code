@@ -1,10 +1,118 @@
 <script setup lang="ts">
-const visible = ref(false)
-
-
+import type { FormSubmitEvent } from '#ui/types'
 import { NuxtImg } from '#components'
 import { useTypewriter } from '~/composables/useTypewriter'
+
+const visible = ref(false)
 const heroTitleRef = ref<HTMLElement | null>(null)
+
+interface ContactFormState {
+  name: string
+  email: string
+  company: string
+  message: string
+}
+
+interface ContactFormErrors {
+  name: string | null
+  email: string | null
+  company: string | null
+  message: string | null
+}
+
+const contactForm = reactive<ContactFormState>({
+  name: '',
+  email: '',
+  company: '',
+  message: ''
+})
+
+const contactErrors = reactive<ContactFormErrors>({
+  name: null,
+  email: null,
+  company: null,
+  message: null
+})
+
+const isContactSubmitting = ref(false)
+const contactSuccess = ref(false)
+const isResettingContactForm = ref(false)
+
+const resetContactErrors = () => {
+  (Object.keys(contactErrors) as Array<keyof ContactFormErrors>).forEach((key) => {
+    contactErrors[key] = null
+  })
+}
+
+const validateContactForm = (formData: ContactFormState) => {
+  let isValid = true
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+  if (!formData.name.trim()) {
+    contactErrors.name = 'Bitte gib deinen Namen an.'
+    isValid = false
+  }
+
+  if (!formData.email.trim()) {
+    contactErrors.email = 'Bitte gib deine E-Mail-Adresse an.'
+    isValid = false
+  } else if (!emailPattern.test(formData.email)) {
+    contactErrors.email = 'Bitte gib eine gültige E-Mail-Adresse ein.'
+    isValid = false
+  }
+
+  if (!formData.message.trim()) {
+    contactErrors.message = 'Bitte formuliere dein Anliegen.'
+    isValid = false
+  } else if (formData.message.trim().length < 10) {
+    contactErrors.message = 'Deine Nachricht sollte mindestens 10 Zeichen enthalten.'
+    isValid = false
+  }
+
+  return isValid
+}
+
+const submitContactForm = async (event: FormSubmitEvent<ContactFormState>) => {
+  contactSuccess.value = false
+  resetContactErrors()
+
+  if (!validateContactForm(event.data)) {
+    return
+  }
+
+  isContactSubmitting.value = true
+
+  try {
+    await new Promise(resolve => setTimeout(resolve, 600))
+    contactSuccess.value = true
+    isResettingContactForm.value = true
+    Object.assign(contactForm, {
+      name: '',
+      email: '',
+      company: '',
+      message: ''
+    })
+    await nextTick()
+    isResettingContactForm.value = false
+  } finally {
+    isContactSubmitting.value = false
+  }
+}
+
+const clearFieldState = (field: keyof ContactFormErrors) => {
+  if (contactErrors[field]) {
+    contactErrors[field] = null
+  }
+
+  if (!isResettingContactForm.value) {
+    contactSuccess.value = false
+  }
+}
+
+watch(() => contactForm.name, () => clearFieldState('name'))
+watch(() => contactForm.email, () => clearFieldState('email'))
+watch(() => contactForm.company, () => clearFieldState('company'))
+watch(() => contactForm.message, () => clearFieldState('message'))
 
 
 const { data: page } = await useAsyncData('index', () => queryCollection('content').first())
@@ -186,6 +294,106 @@ onMounted(() => {
     </UPageSection>
 
     <USeparator />
+
+    <UPageSection
+      id="contact"
+      :title="page.contact?.title"
+      :description="page.contact?.description"
+      :ui="{ title: 'text-left', description: 'text-left' }"
+      class="relative"
+    >
+      <template #title>
+        <MDC v-if="page.contact?.title" :value="page.contact.title" class="sm:*:leading-11" />
+      </template>
+
+      <template #description>
+        <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] items-start">
+          <div class="space-y-6 text-left">
+            <MDC
+              v-if="page.contact?.description"
+              :value="page.contact.description"
+              class="font-robotoslab text-base sm:text-lg space-y-4"
+            />
+
+            <UAlert
+              v-if="page.contact?.highlight"
+              icon="i-lucide-message-circle"
+              variant="soft"
+              color="primary"
+              :description="page.contact.highlight"
+              class="max-w-xl"
+            />
+          </div>
+
+          <UCard :ui="{ body: 'space-y-6 p-6 sm:p-8' }" class="shadow-lg shadow-primary/10 border border-primary/10">
+            <div class="space-y-2">
+              <h3 class="text-2xl font-semibold">Schreib mir eine Nachricht</h3>
+              <p class="text-sm text-muted">Ich melde mich innerhalb von 24 Stunden persönlich bei dir.</p>
+            </div>
+
+            <UAlert
+              v-if="contactSuccess"
+              title="Vielen Dank für deine Anfrage!"
+              description="Ich habe deine Nachricht erhalten und melde mich in Kürze."
+              icon="i-lucide-party-popper"
+              color="primary"
+              variant="soft"
+            />
+
+            <UForm :state="contactForm" class="space-y-5" @submit="submitContactForm">
+              <UFormGroup label="Name" name="name" required :error="contactErrors.name">
+                <UInput
+                  v-model="contactForm.name"
+                  placeholder="Max Mustermann"
+                  autocomplete="name"
+                />
+              </UFormGroup>
+
+              <UFormGroup label="E-Mail" name="email" required :error="contactErrors.email">
+                <UInput
+                  v-model="contactForm.email"
+                  type="email"
+                  placeholder="beispiel@unternehmen.de"
+                  autocomplete="email"
+                />
+              </UFormGroup>
+
+              <UFormGroup label="Unternehmen" name="company">
+                <UInput
+                  v-model="contactForm.company"
+                  placeholder="Ihr Firmenname (optional)"
+                  autocomplete="organization"
+                />
+              </UFormGroup>
+
+              <UFormGroup label="Nachricht" name="message" required :error="contactErrors.message">
+                <UTextarea
+                  v-model="contactForm.message"
+                  :rows="6"
+                  placeholder="Beschreibe kurz dein Projekt oder deine Frage."
+                />
+              </UFormGroup>
+
+              <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <p class="text-xs text-muted">
+                  Mit dem Absenden akzeptierst du die Verarbeitung deiner Angaben zur Kontaktaufnahme.
+                </p>
+                <UButton
+                  type="submit"
+                  size="lg"
+                  icon="i-lucide-send"
+                  :loading="isContactSubmitting"
+                  label="Nachricht senden"
+                  class="sm:shrink-0"
+                />
+              </div>
+            </UForm>
+          </UCard>
+        </div>
+      </template>
+    </UPageSection>
+
+    <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageCTA v-bind="page.cta" variant="naked" class="overflow-hidden @container">
       <template #title>
