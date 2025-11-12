@@ -18,6 +18,10 @@ const items = computed(() => [{
   label: 'Kundenstimmen',
   to: '#testimonials',
   active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
+}, {
+  label: 'Kontakt',
+  to: '#contact',
+  active: activeHeadings.value.includes('contact')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
@@ -25,7 +29,8 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     document.querySelector('#about'),
     document.querySelector('#features'),
     document.querySelector('#pricing'),
-    document.querySelector('#testimonials')
+    document.querySelector('#testimonials'),
+    document.querySelector('#contact')
   ].filter(Boolean) as Element[])
 })
 </script>
@@ -49,6 +54,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         label="Kontakt"
         variant="subtle"
         class="hidden lg:block"
+        to="#contact"
       />
 
     </template>
@@ -64,6 +70,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         label="Kontakt"
         variant="subtle"
         block
+        to="#contact"
       />
     </template>
   </UHeader>
